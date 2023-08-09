@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>My Calculator</title>
+        <style>
+            td { text-align:center; 
+                font-size:20pt; 
+                width:25%; 
+                background-color: aqua; 
+                border-radius:10px; 
+                cursor:pointer; 
+                box-shadow:1px 1px 2px black } 
+            input { font-size:20pt;
+                    width:320px; 
+                    text-align:right; 
+                    border:2px solid gray;
+                    background-color: lightyellow; 
+                    color:blue; 
+                    border-radius:8px;
+                    height:60px; } 
+        </style> 
+    </head> 
+    <body style="max-width:300px; 
+                 max-height:400px;
+                 margin:auto;
+                 margin-top:3cm;"> 
+        <table height=100% 
+                width=100% 
+                cellspacing=15 
+                style="border:3px solid gray; 
+                       box-shadow:1px 1px 10px black; 
+                       background-color:gray"> 
+                <tr> 
+                     <td colspan=4 style="border:none; 
+                                          background-color:gray; 
+                                          box-shadow:none"> 
+                            <input id=disp name=disp colspan=4>
+                     </td> 
+ 
+                <tr> 
+                        <td colspan=3 >Calculator 
+                        <td onclick="disp.value=''">C 
+                <tr> 
+                    <td onclick="disp.value+='7'">7 
+                    <td onclick="disp.value+='8'">8 
+                    <td onclick="disp.value+='9'">9 
+                    <td onclick="disp.value+='/'">/ 
+                <tr> 
+                    <td onclick="disp.value+='4'">4 
+                    <td onclick="disp.value+='5'">5
+                    <td onclick="disp.value+='6'">6 
+                    <td onclick="disp.value+='*'">x 
+                <tr> 
+                    <td onclick="disp.value+='1'">1 
+                    <td onclick="disp.value+='2'">2 
+                    <td onclick="disp.value+='3'">3 
+                    <td onclick="disp.value+='-'">- 
+                <tr> 
+                    <td onclick="disp.value+='.'">. 
+                    <td onclick="disp.value+='0'">0 
+                    <td onclick="disp.value=eval(disp.value)">= 
+                    <td onclick="disp.value+='+'">+ 
+       </table> 
+    </body>
+</html>
